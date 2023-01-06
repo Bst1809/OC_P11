@@ -6,6 +6,8 @@ public with sharing class TaskReminder {
                 tsk.subject = 'Call';
                 tsk.Status = 'Open';
                 tsk.Priority = 'Normal';
+                tsk.IsReminderSet = true;
+                tsk.ReminderDateTime = System.now() +5;
                 tsk.WhatId = a.Id;
                 tsk.OwnerId = a.OwnerId;
                 tskList.add(tsk);
